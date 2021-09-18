@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C59028D0BC890D1B3769ECC /* Pods_Custom_UIs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90282DF6E0755E12D582354B /* Pods_Custom_UIs.framework */; };
 		40634D671EF9660F0089078D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40634D661EF9660F0089078D /* AppDelegate.swift */; };
 		40634D691EF9660F0089078D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40634D681EF9660F0089078D /* ViewController.swift */; };
 		40634D6C1EF9660F0089078D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40634D6A1EF9660F0089078D /* Main.storyboard */; };
 		40634D6E1EF9660F0089078D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40634D6D1EF9660F0089078D /* Assets.xcassets */; };
 		40634D711EF9660F0089078D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40634D6F1EF9660F0089078D /* LaunchScreen.storyboard */; };
+		40634D7A1EF96A290089078D /* HUD_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40634D791EF96A290089078D /* HUD_Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		40634D6D1EF9660F0089078D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40634D701EF9660F0089078D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40634D721EF9660F0089078D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40634D791EF96A290089078D /* HUD_Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD_Button.swift; sourceTree = "<group>"; };
+		706A3B4BF7D82DF427C2B753 /* Pods-Custom UIs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Custom UIs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Custom UIs/Pods-Custom UIs.release.xcconfig"; sourceTree = "<group>"; };
+		90282DF6E0755E12D582354B /* Pods_Custom_UIs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Custom_UIs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4303E47E0499501DB9A37D4 /* Pods-Custom UIs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Custom UIs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Custom UIs/Pods-Custom UIs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C59028D0BC890D1B3769ECC /* Pods_Custom_UIs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				40634D651EF9660E0089078D /* Custom UIs */,
 				40634D641EF9660E0089078D /* Products */,
+				ABD10940941D496B3DFBC623 /* Pods */,
+				B9148094AF4E79196B99256B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		40634D651EF9660E0089078D /* Custom UIs */ = {
 			isa = PBXGroup;
 			children = (
+				40634D781EF969F00089078D /* HUD  */,
 				40634D661EF9660F0089078D /* AppDelegate.swift */,
 				40634D681EF9660F0089078D /* ViewController.swift */,
 				40634D6A1EF9660F0089078D /* Main.storyboard */,
@@ -64,6 +74,31 @@
 			path = "Custom UIs";
 			sourceTree = "<group>";
 		};
+		40634D781EF969F00089078D /* HUD  */ = {
+			isa = PBXGroup;
+			children = (
+				40634D791EF96A290089078D /* HUD_Button.swift */,
+			);
+			name = "HUD ";
+			sourceTree = "<group>";
+		};
+		ABD10940941D496B3DFBC623 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4303E47E0499501DB9A37D4 /* Pods-Custom UIs.debug.xcconfig */,
+				706A3B4BF7D82DF427C2B753 /* Pods-Custom UIs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9148094AF4E79196B99256B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90282DF6E0755E12D582354B /* Pods_Custom_UIs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40634D751EF9660F0089078D /* Build configuration list for PBXNativeTarget "Custom UIs" */;
 			buildPhases = (
+				59737A97968890CBC0D68C67 /* [CP] Check Pods Manifest.lock */,
 				40634D5F1EF9660E0089078D /* Sources */,
 				40634D601EF9660E0089078D /* Frameworks */,
 				40634D611EF9660E0089078D /* Resources */,
+				60BEF64A741DB9F7AD16D882 /* [CP] Embed Pods Frameworks */,
+				3BFDED2E97B4F9773E388BB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +170,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BFDED2E97B4F9773E388BB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Custom UIs/Pods-Custom UIs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59737A97968890CBC0D68C67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		60BEF64A741DB9F7AD16D882 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Custom UIs/Pods-Custom UIs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		40634D5F1EF9660E0089078D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				40634D691EF9660F0089078D /* ViewController.swift in Sources */,
+				40634D7A1EF96A290089078D /* HUD_Button.swift in Sources */,
 				40634D671EF9660F0089078D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,10 +346,12 @@
 		};
 		40634D761EF9660F0089078D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4303E47E0499501DB9A37D4 /* Pods-Custom UIs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W352GN58Z7;
 				INFOPLIST_FILE = "Custom UIs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.superiorfuture.Custom-UIs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +361,12 @@
 		};
 		40634D771EF9660F0089078D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 706A3B4BF7D82DF427C2B753 /* Pods-Custom UIs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W352GN58Z7;
 				INFOPLIST_FILE = "Custom UIs/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.superiorfuture.Custom-UIs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +393,7 @@
 				40634D771EF9660F0089078D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
